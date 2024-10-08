@@ -1,2 +1,4 @@
 # loginandforgotpassword01
-Both login and forgot password in one site, use pink and lightblue background color
+Only design was completed.
+Check missed input data and incorrect form of email.
+Demo: https://xn--msiu-goa8b.vn/github/loginandforgotpassword01/
