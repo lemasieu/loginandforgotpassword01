@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng nhập</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="source.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box hopdangnhap">
+            <div class="details dtdangnhap">
+                <h2>Đăng nhập</h2>
+                <div class="box-wrapper">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" id="usernamedn" placeholder="Tên đăng nhập" required>
+                </div>
+                <div class="box-wrapper">
+                    <label for="password">Mật khẩu</label>
+                    <span toggle="#passworddn" class="field-icon"><i class="bi bi-eye-fill"></i></span>
+                    <input type="password" id="passworddn" placeholder="Mật khẩu" required>
+                </div>
+                <table border="0" width="100%">
+                    <tr>
+                    <td width="6%"><input id="remember" class="remember" type="checkbox"></td>
+                    <td width="50%">Ghi nhớ đăng nhập</td>
+                    <td width="44%" style="text-align: right;"><a href="#">Cần hỗ trợ?</a></td>
+                    </tr>
+                </table>
+                <button id="login">Đăng nhập</button>
+                <p>Quên mật khẩu? <a href="#" id="nhayphai">Đặt lại</a></p>
+            </div>
+        
+        <div class="hopdangky">
+            <div class="details dtdangky">
+                <h2>Đặt lại mật khẩu</h2>
+                <p>Vui lòng điền 1 trong 2 thông tin dưới đây để đặt lại mật khẩu.</p>
+                <div class="box-wrapper">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" id="usernameqmk" placeholder="Tên đăng nhập" required>
+                </div>
+                <div class="box-wrapper">
+                    <label for="email">Địa chỉ email</label>
+                    <input type="email" id="emailqmk" placeholder="Địa chỉ email" required>
+                </div>
+                <button id="register">Đặt lại</button>
+                <p>Đã nhớ mật khẩu? <a href="#" id="nhaytrai">Đăng nhập</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="register-error-popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopupBtn" class="close-btn">&times;</span>
+            <div class="popup-message">
+                <!-- Icon FontAwesome -->
+                <i class="bi bi-send-x"></i>
+                <p id="register-error-message" style="color: red;"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
